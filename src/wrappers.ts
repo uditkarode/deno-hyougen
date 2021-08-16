@@ -238,24 +238,10 @@ export function getWrappedApp(
       for (const m in params) {
         const method = params[m];
         docStr += `# ${m} routes\n`;
-        switch (m) {
-          case METHODS.get: {
-            if (method.length > 0) {
-              method.forEach((route) => {
-                docStr += `${route}\n\n`;
-              });
-            }
-            break;
-          }
-
-          case METHODS.post: {
-            if (method.length > 0) {
-              method.forEach((route) => {
-                docStr += `${route}\n\n`;
-              });
-            }
-            break;
-          }
+        if (method.length > 0) {
+          method.forEach((route) => {
+            docStr += `${route}\n\n`;
+          });
         }
       }
 

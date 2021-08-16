@@ -8,3 +8,6 @@
 	- `username`: string
 
 # PUT routes
+* **PUT** /testPut
+	- `username`: string
+
