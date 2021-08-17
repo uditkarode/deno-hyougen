@@ -42,7 +42,7 @@ For a bodied route, `ctx` is an Oak context with the following extra properties:
 `hyBody` is essentially an object with parameters that a request receives, and has the same keys as the second argument to the route. You can be sure that whatever route logic you write will always be run with a proper body, since if it was invalid, a validation error would have been thrown and the route logic would never have been executed.
 
 `hyFiles` is an object containing files received in the request. An example is:
-```json
+```js
 {
   profilePicture: {
     content: undefined,
