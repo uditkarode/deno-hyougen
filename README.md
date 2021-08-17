@@ -37,9 +37,22 @@ The second argument here is the POST body that you're expecting for this route. 
 For a bodied route, `ctx` is an Oak context with the following extra properties:
 * `hyRes: WrappedResponse`
 * `hyBody: dtObjStatic`
-* `hyFiles: formidable.Files`
+* `hyFiles: Record<string, FormDataFile>`
   
 `hyBody` is essentially an object with parameters that a request receives, and has the same keys as the second argument to the route. You can be sure that whatever route logic you write will always be run with a proper body, since if it was invalid, a validation error would have been thrown and the route logic would never have been executed.
+
+`hyFiles` is an object containing files received in the request. An example is:
+```json
+{
+  profilePicture: {
+    content: undefined,
+    contentType: "image/png",
+    name: "profilePicture",
+    filename: "/tmp/d4f20279/9b732a0e528445ebbb4c81ddac5b16faeade2e66.png",
+    originalName: "login_image.png"
+  }
+}
+```
   
 Now, coming to the type `WrappedResponse`. It contains:
 * `genericSuccess` -- a function that you can call to send back `{"status":"success","message":"Operation successful!"}`
