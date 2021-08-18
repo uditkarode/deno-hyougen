@@ -1,4 +1,4 @@
-# hyougen (node)
+# hyougen (deno)
 A wrapper for Oak with some handy stuff!
 
 ## What?
