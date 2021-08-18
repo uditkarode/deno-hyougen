@@ -1,7 +1,7 @@
 import { Logger } from "../src/logger.ts";
 import { getWrappedApp } from "../src/index.ts";
 import userRoutes from "./user-routes.ts";
-import { String } from "https://deno.land/x/drytype@v0.3.0/mod.ts";
+import { String } from "https://deno.land/x/drytype@v0.4.0/mod.ts";
 import {
   Application,
   HttpServerNative,

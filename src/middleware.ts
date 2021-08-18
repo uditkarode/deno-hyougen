@@ -4,7 +4,7 @@ import {
   dtObj,
   ExactRecord as DryRecord,
   ValidationError,
-} from "https://deno.land/x/drytype@v0.3.0/mod.ts";
+} from "https://deno.land/x/drytype@v0.4.0/mod.ts";
 import { HyError } from "./hyougen-error.ts";
 import { hyBodiedRouterMiddleware, hyRouterMiddleware } from "./routers.ts";
 import { getWrappedResponse } from "./wrappers.ts";
