@@ -15,9 +15,9 @@ import {
 
 const TAG = "hyougen/middleware.ts";
 
-export const NonBodiedMiddleware: hyRouterMiddleware = (context, next) => {
+export const NonBodiedMiddleware: hyRouterMiddleware = async (context, next) => {
   context.hyRes = getWrappedResponse(context.response);
-  next();
+  await next();
 };
 
 export function BodiedMiddleware<O extends dtObj>(
