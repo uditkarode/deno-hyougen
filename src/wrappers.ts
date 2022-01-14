@@ -1,5 +1,5 @@
 import { ResponseStrings } from "./constants.ts";
-import { dtObj } from "https://deno.land/x/drytype@v0.4.0/mod.ts";
+import { dtObj } from "https://deno.land/x/drytype@v0.4.6/mod.ts";
 import { METHODS } from "./utils.ts";
 import { BodiedMiddleware, NonBodiedMiddleware } from "./middleware.ts";
 import { Logger } from "./logger.ts";

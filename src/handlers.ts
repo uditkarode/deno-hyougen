@@ -1,4 +1,4 @@
-import { dtObj } from "https://deno.land/x/drytype@v0.4.0/mod.ts";
+import { dtObj } from "https://deno.land/x/drytype@v0.4.6/mod.ts";
 
 var params: { [index: string]: unknown[] } = {};
 
